@@ -19,9 +19,9 @@ A simple PHP client for the Facebook Graph API and oAuth 2.0. Useful for canvas 
   }
 ```
 
-### Restoring last request
 If a user's Facebook session expires, the thin client can restore the user's last http request
 after re-authenticating through Facebook automatically (so user's experience isn't interrupted).
+### Restoring last request
 ```
   $old_get_request = $fb->getAuthPassback();
   if (!empty($old_get_request)) {
